@@ -20,22 +20,34 @@ function App() {
     "20191127_123239-768x363.jpg",
     "20191127_123204-768x363.jpg",
   ];
-  const imageTripSecond = [
-    "received_657971532075575-225x300.jpeg"
-  ];
+  const imageTripSecond = ["received_657971532075575-225x300.jpeg"];
   const buildMinecraftURL = (imagePath) =>
-    `http://info.kanal6.pl/wp-content/uploads/2022/03/${imagePath}`;
+    `https://info.kanal6.pl/wp-content/uploads/2022/03/${imagePath}`;
   const buildTripURL = (imagePath) =>
-  `https://new1.zsp1slupsk.pl/wp-content/uploads/2022/03/${imagePath}`;
+    `https://new1.zsp1slupsk.pl/wp-content/uploads/2022/03/${imagePath}`;
   return (
     <div className="App">
-      <Navbar/>
-      <HeroImage source="https://d-art.ppstatic.pl/kadry/k/r/1/b5/91/622b88b69a748_o_large.jpg" header="Nagrodzeni za Minecraft'a"/>
-      <Gallery buildURL={buildMinecraftURL} images={imagesMinecraft} width="600" height="600" />
-      <HeroImage source="https://new1.zsp1slupsk.pl/wp-content/uploads/2022/03/20191127_122840-768x363.jpg" header="Wycieczka do Gdańska"/>
+      <Navbar />
+      <HeroImage
+        source="https://d-art.ppstatic.pl/kadry/k/r/1/b5/91/622b88b69a748_o_large.jpg"
+        header="Nagrodzeni za Minecraft'a"
+      />
+      <Gallery
+        buildURL={buildMinecraftURL}
+        images={imagesMinecraft}
+        widthImage="600"
+        heightImage="600"
+      />
+      <HeroImage
+        source="https://new1.zsp1slupsk.pl/wp-content/uploads/2022/03/20191127_122840-768x363.jpg"
+        header="Wycieczka do Gdańska"
+      />
       <Gallery buildURL={buildTripURL} images={imagesTrip} />
-      <HeroImage source="https://new1.zsp1slupsk.pl/wp-content/uploads/2022/03/received_580464940305004-300x225.jpeg" header="Śladami latarni morskich"/>
-      <Gallery buildURL={buildTripURL} images={imageTripSecond}/>
+      <HeroImage
+        source="https://new1.zsp1slupsk.pl/wp-content/uploads/2022/03/received_580464940305004-300x225.jpeg"
+        header="Śladami latarni morskich"
+      />
+      <Gallery buildURL={buildTripURL} images={imageTripSecond} />
     </div>
   );
 }

@@ -13,8 +13,8 @@ export const Gallery = (props) => (
           fit: "crop",
           fm: "jpg",
         }}
-        width={props.width}
-        height={props.height}
+        width={+props.widthImage}
+        height={+props.heightImage}
       />
     ))}
   </div>
