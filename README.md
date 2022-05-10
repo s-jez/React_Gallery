@@ -1,2 +1,2 @@
 # React Gallery
-static website with a gallery, made in React.js
+Check this website here https://kolo-turystyczne.netlify.app/
